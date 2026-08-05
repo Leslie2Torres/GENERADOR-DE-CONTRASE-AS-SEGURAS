@@ -16,7 +16,7 @@ def generate_contrasena():
 
 # Avance inicial: Lectura de datos según el diagrama de flujo
 
-    longitud = int(input("\nIngresar longitud de contraseña: "))
+    longitud = int(input("Ingresar longitud de contraseña: "))
 
 # validacion de longitud minima
 
