@@ -22,9 +22,25 @@ def generate_contrasena():
 
     if longitud >= 8:
         print("Longitud válida.")
+
+# crear caracteres para la contraseña
+
+        caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*"
+
+# generar la contraseña aleatoria
+
+        contrasena = ""
+        for i in range(longitud):
+            contrasena += random.choice(caracteres) 
+
+# mostrar la contraseña generada
+        print("Contraseña generada:")
+        print(contrasena)
+        
     else:
         print("La longitud mínima de la contraseña debe ser de 8 caracteres.")
 
-# Inicio del programa
+
+#Inicio del programa
 generate_contrasena()
         
